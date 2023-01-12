@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cafe.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CAFE BHADGAON</title>
+    <h1>CAFE BHADGAON</h1>
+    <style>
+    * {box-sizing: border-box;}
+    body {font-family: Verdana, sans-serif;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;
+
+  border-width:medium;
+border-color: saddleBrown}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: black;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+      border-color: saddleBrown;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    </style>
+    </head>
+    <body>
+
+
+
+    <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="picture1.jpg" style="width:100%">
+      <div class="text">Cafe Bhadgaon</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="picture2.jpg" style="width:100%">
+      <div class="text" >Cafe Bhadgaon</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="picture4.jpg" style="width:100%">
+      <div class="text">Cafe Bhadgaon</div>
+    </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+    </script>
+
+  <body>
+      <div  class="menublock">
+  <a href="index.html">
+  <button  name="Home">Home</button>
+  </a>
+  <a href="menu.html">
+<button  name="Menu">Menu</button>
+  </a>
+      <a href="aboutus.html">
+        <button  name="About Us">About Us</button>
+      </a>
+      <a href="reservations.html">
+        <button  name="Reservations">Reservations</button>
+        </a>
+      </div>
+        <br>
+        <h2>Table Reservation</h2>
+      <p>  At the wonderful Bhadgaon, you can book a table for a morning meeting for a breakfast, lunch for important business partners or a moment with you friends. our lunch and Sunday brunch are full of seasonal delicacies. a moment in the atmosphere of Bhadgaon warms the mind.
+        <br>
+      If you do not find a suitable date and time or if you want to book a bogger group, call 9779818094150
+      <br>  <br>
+Organize your event in the wonderful Bhadgaon.Bhadgaon´s great location, attentive customer service and Bhadgaon´s high quality kitchen guarantee a successful opportunity.
+<br>  <br>
+Press conferences, dinners, weddings and corporate and family celebretions can be organized in Bhadgaon.
+<br>  <br>
+Cocktail parties are succesful for even a larger number of people. We will be happy to help with any arrangements and questions related to event.
+<br>  <br>
+You can also order catering for meetings and parties from us. if necessary, we deliver catering to your office or home, for example.</p>
+<br>  <br>
+<h4>Inquires to bhaktapur@bhadgaon.np or phone on 9818094150.</h4>
+<br>
+  <div  class="menublock">
+<button class="btn"><i class="fa fa-home"></i></button>
+<button class="btn"><i class="fa fa-facebook"></i></button>
+<button class="btn"><i class="fa fa-instagram"></i></button>
+<button class="btn"><i class="fa fa-phone"></i></button>
+<button class="btn"><i class="fa fa-envelope"></i></button>
+</div>
+<br>
+<p> Taumadhi square | Bhaktapur 44800, Nepal | +9779818094150 | bhaktapur@bhadgaon.np <br>
+Open Mon-Sat 9-18, Sun 9-17 | </p>
+
+</div>
+
+</div>
+  <div  class="reserveblock">
+<a href="reservetable.html">
+<button type="button" name="button">Reserve your table</button> </a>
+</div>
+
+</body>
+</html>
